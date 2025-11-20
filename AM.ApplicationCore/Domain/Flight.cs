@@ -21,7 +21,8 @@ namespace AM.ApplicationCore.Domain
   
         public override string ToString()
         {
-            return $"Flight[{FlightId}] {Departure} -> {Destination} on {FlightDate:yyyy-MM-dd}";
+ 
+            return ("Destination: " + this.Destination + ", estimated duration :" + this.EstimatedDuration +", flightDate :"+ FlightDate +" \n");
         }
     }
 

@@ -1,23 +1,20 @@
 ﻿using AM.ApplicationCore.Domain;
+using AM.ApplicationCore.Services;
 using System;
+using System.Runtime.ConstrainedExecution;
 
 class Program
 {
     static void Main()
-    {
+    {/*
         Console.WriteLine("Hello, World!");
-
-        // Plane
         var plane = new Plane
-        {
-            PlaneId = 3,
+        {   PlaneId = 3,
             PlaneType = PlaneType.Boeing,
             Capacity = 200,
             ManufactureDate = new DateTime(2020, 1, 1)
         };
         Console.WriteLine(plane);
-
-        // Passenger
         var passenger = new Passenger
         {
             Id = 1,
@@ -38,10 +35,8 @@ class Program
             Salary = 5000
         };
         staff.PassengerType();
-
         var traveller = new Traveller
-        {
-            Id = 3,
+        {   Id = 3,
             FirstName = "Alice",
             LastName = "Smith",
             Nationality = "French"
@@ -51,8 +46,19 @@ class Program
         Console.WriteLine(passenger);
         Console.WriteLine(staff);
         Console.WriteLine(traveller);
-        // Tester polymorphisme par signature
         Console.WriteLine("CheckProfile 2 params: " + passenger.CheckProfile("Troudi", "Meria"));
         Console.WriteLine("CheckProfile 3 params: " + passenger.CheckProfile("Troudi", "Meria", "meriatroudi@esprit.tn"));
+        */
+        FlightMethods fm = new FlightMethods() {
+         Flights=TestData.listFlights
+        };
+        Console.WriteLine("--GetFlightMethods");
+        foreach (var date in fm.GetFlightDates("Paris"))
+        {
+            Console.WriteLine("date"+date);
+        }
+        Console.WriteLine("--GetFlighs");
+        fm.getFlight("Destination", "Paris");
+
     }
 }

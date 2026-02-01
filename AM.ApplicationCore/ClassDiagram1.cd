@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="AM.ApplicationCore.Domain.Flight">
+    <Position X="3.5" Y="0.5" Width="2.25" />
+    <Members>
+      <Property Name="MyPlane" Hidden="true" />
+      <Property Name="Passengers" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAEAAgAAABAAABEAAAMAAAAAAAAEAA=</HashCode>
+      <FileName>Domain\Flight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AM.ApplicationCore.Domain.Plane">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <Members>
+      <Property Name="Flights" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAQAAAEAAAAACACAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Domain\Plane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AM.ApplicationCore.Domain.Passenger">
+    <Position X="6.5" Y="0.5" Width="2" />
+    <Members>
+      <Method Name="CheckProfile" Hidden="true" />
+      <Property Name="Flights" Hidden="true" />
+      <Method Name="PassengerType" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAQAgAEAAAAAAQAAIAAAAgAAAAAAgAAAIg=</HashCode>
+      <FileName>Domain\Passenger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AM.ApplicationCore.Domain.Staff">
+    <Position X="7.5" Y="3" Width="2.25" />
+    <Members>
+      <Method Name="PassengerType" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAEEAAAAAAIAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Staff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AM.ApplicationCore.Domain.Traveller">
+    <Position X="5.25" Y="3" Width="2" />
+    <Members>
+      <Method Name="PassengerType" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAIAAAAAgAAAAAAAACAA=</HashCode>
+      <FileName>Domain\Traveller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="AM.ApplicationCore.Domain.PlaneType">
+    <Position X="0.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Plane.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

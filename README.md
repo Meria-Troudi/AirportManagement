@@ -1,5 +1,5 @@
 
-# Welcome!
+# .NET Practice
 
 This repository is a hands-on project created as part of my exploration into .NET technologies and backend development with .NET Core.
 
